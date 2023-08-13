@@ -19,14 +19,16 @@
                 </div>
                 @if (todo.Completed)
                 {
-                    <div style="width: 120px">
-                        <button class="btn btn-primary" onclick="@(() => UncompleteItem(todo))">Uncomplete</button>
+                    <div style="width: 110px">
+                        @*<button class="btn btn-primary" onclick="@(() => UncompleteItem(todo))">Uncomplete</button>*@
+                        <input type="checkbox" style="vertical-align:middle" checked="checked" onclick="@(() => UncompleteItem(todo))" class="form-check-input .checkbox-lg" />
                     </div>
                 }
                 @if (!todo.Completed)
                 {
-                    <div style="width: 120px">
-                        <button class="btn btn-primary" onclick="@(() => CompleteItem(todo))">Complete</button>
+                    <div style="width: 110px">
+                        @*<button class="btn btn-primary" onclick="@(() => CompleteItem(todo))">Complete</button>*@
+                        <input style="vertical-align:middle" type="checkbox" onclick="@(() => CompleteItem(todo))" class="form-check-input .checkbox-lg" />
                     </div>
                 }
                 <div>
