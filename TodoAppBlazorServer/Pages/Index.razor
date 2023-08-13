@@ -20,7 +20,7 @@
                 @if (todo.Completed)
                 {
                     <div style="width: 120px">
-                        <button class="btn btn-primary" onclick="@(() => UncompleteItem(todo))">Uncomplete</button>
+                        <button class="btn btn-success" onclick="@(() => UncompleteItem(todo))">Completed</button>
                     </div>
                 }
                 @if (!todo.Completed)
